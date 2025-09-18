@@ -1,0 +1,135 @@
+body {
+    font-family: sans-serif;
+    background-color: #2c2f33;
+    color: #ffffff;
+    padding: 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    background-color: #23272a;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+h1, h2 {
+    text-align: center;
+    color: #7289da;
+}
+
+.calculator {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.input-section {
+    flex: 1;
+    min-width: 400px;
+}
+
+.output-section {
+    flex: 2;
+    min-width: 400px;
+}
+
+.input-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-group label {
+    margin-bottom: 5px;
+    font-size: 0.9em;
+    color: #99aab5;
+}
+
+.input-group input {
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #4f545c;
+    background-color: #40444b;
+    color: #ffffff;
+    font-size: 1em;
+}
+
+.checkbox-group {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #7289da;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #677bc4;
+}
+
+.skill-result {
+    background-color: #2c2f33;
+    padding: 15px;
+    border-radius: 5px;
+    border-left: 4px solid #7289da;
+    margin-bottom: 15px;
+}
+
+.skill-result h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.result-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.result-item span {
+    font-weight: bold;
+}
+
+.normal-heal { color: #83f5a0; }
+.crit-heal { color: #f5d783; }
+.cooldown { color: #83d1f5; }
+.duration { color: #f583b4; }
+
+details {
+    margin-top: 15px;
+}
+
+summary {
+    cursor: pointer;
+    font-weight: bold;
+    color: #99aab5;
+}
+
+.details-content {
+    background-color: #23272a;
+    padding: 10px;
+    border-radius: 4px;
+    margin-top: 5px;
+    font-size: 0.9em;
+    white-space: pre-wrap;
+    font-family: monospace;
+}

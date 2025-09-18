@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Cura TL v2.0</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Calculadora de Cura TL v2.0</h1>
+
+        <div class="calculator">
+            <div class="input-section">
+                <h2>Parâmetros do Personagem</h2>
+                <div class="input-grid">
+                    <div class="input-group">
+                        <label for="minDamage">Dano Mínimo</label>
+                        <input type="number" id="minDamage" value="289">
+                    </div>
+                    <div class="input-group">
+                        <label for="maxDamage">Dano Máximo</label>
+                        <input type="number" id="maxDamage" value="847">
+                    </div>
+                    <div class="input-group">
+                        <label for="magicCritChance">Chance Crítico Mágico (%)</label>
+                        <input type="number" id="magicCritChance" value="10">
+                    </div>
+                     <div class="input-group">
+                        <label for="magicCritDamage">Dano Crítico Mágico (%)</label>
+                        <input type="number" id="magicCritDamage" value="50">
+                    </div>
+                    <div class="input-group">
+                        <label for="maxMana">Mana Máxima</label>
+                        <input type="number" id="maxMana" value="29992">
+                    </div>
+                    <div class="input-group">
+                        <label for="buffDuration">Duração de Buff (%)</label>
+                        <input type="number" id="buffDuration" value="95.4">
+                    </div>
+                    <div class="input-group">
+                        <label for="partyMembers">Nº de Membros no Grupo (1-6)</label>
+                        <input type="number" id="partyMembers" value="6" min="1" max="6">
+                    </div>
+                    <div class="input-group">
+                        <label for="saintOathStacks">Stacks de Saint's Oath (0-5)</label>
+                        <input type="number" id="saintOathStacks" value="3" min="0" max="5">
+                    </div>
+                    <div class="input-group">
+                        <label for="selflessSoulStacks">Stacks de Selfless Soul (0-5)</label>
+                        <input type="number" id="selflessSoulStacks" value="5" min="0" max="5">
+                    </div>
+                    <div class="input-group">
+                        <label for="archerSurgeStacks">Stacks de Archer's Surge (0-3)</label>
+                        <input type="number" id="archerSurgeStacks" value="2" min="0" max="3">
+                    </div>
+                </div>
+                <div class="checkbox-group">
+                    <label><input type="checkbox" id="isDay" checked> É de dia no jogo?</label>
+                    <label><input type="checkbox" id="isWisdomLow" checked> Sabedoria (Wisdom) < 80?</label>
+                </div>
+                 <button id="calculateBtn">Calcular Cura</button>
+            </div>
+
+            <div class="output-section">
+                <h2>Resultados da Cura</h2>
+                <div id="results">
+                    </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
